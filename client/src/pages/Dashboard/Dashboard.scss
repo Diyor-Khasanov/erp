@@ -1,0 +1,102 @@
+.dashboard {
+  padding: 2rem;
+  color: #1c1c1c;
+
+  .dashboard-header {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+    p {
+      color: #888;
+    }
+  }
+
+  .dashboard-stats {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    .stat-card {
+      flex: 1;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+      &.blue {
+        border-left: 5px solid #3c82f6;
+      }
+      &.green {
+        border-left: 5px solid #27ae60;
+      }
+      &.orange {
+        border-left: 5px solid #f39c12;
+      }
+
+      .icon {
+        font-size: 2rem;
+        color: inherit;
+      }
+    }
+  }
+
+  .payment-summary {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    ul {
+      margin-top: 1rem;
+      li {
+        margin-bottom: 0.5rem;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .dashboard-main {
+    display: flex;
+    gap: 2rem;
+
+    .attendance-chart,
+    .calendar {
+      flex: 1;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .upcoming-classes {
+    margin-top: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    ul {
+      margin-top: 1rem;
+      li {
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        position: relative;
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: #3c82f6;
+        }
+      }
+    }
+  }
+}
